@@ -47,7 +47,7 @@ services:
       BCRYPT_ROUNDS: 12
 
       # IMPORTANTE: API debe aceptar frontend público
-      CORS_ORIGIN: http://44.223.180.167:3000
+      CORS_ORIGIN: http://44.195.106.128:3000
 
       SEED_ADMIN_EMAIL: admin@home-health.app
       SEED_ADMIN_PASSWORD: Admin12345!
@@ -63,7 +63,7 @@ services:
       dockerfile: Dockerfile
       args:
         # ESTE ES EL CAMBIO CRÍTICO
-        NEXT_PUBLIC_API_URL: http://44.223.180.167:4000/api
+        NEXT_PUBLIC_API_URL: http://44.195.106.128:4000/api
         NEXT_PUBLIC_USE_MOCK: "false"
     container_name: hh-web
     restart: unless-stopped
